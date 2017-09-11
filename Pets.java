@@ -70,7 +70,7 @@ class Dog implements IPet {
 
 class ExampleIPetandPerson {
 	ExampleIPetandPerson() {}
-	
+
 	IPet persian = new Cat("Cathy", "Persian", true);
 	IPet sphynx = new Cat("Luke", "Sphynx", false);
 	IPet collie = new Dog("Whitie", "Border Collie", true);
