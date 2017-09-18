@@ -102,15 +102,15 @@ class Dog implements IPet {
 
 class ExampleIPetandPerson {
   ExampleIPetandPerson() {}
+  
+  IPet persian = new Cat("Cathy", "Persian", true);
+  IPet sphynx = new Cat("Luke", "Sphynx", false);
+  IPet collie = new Dog("Whitie", "Border Collie", true);
+  IPet doberman = new Dog("Percy", "Doberman Pincher", false);
+  IPet perished = new NoPet();
 	
-	IPet persian = new Cat("Cathy", "Persian", true);
-	IPet sphynx = new Cat("Luke", "Sphynx", false);
-	IPet collie = new Dog("Whitie", "Border Collie", true);
-	IPet doberman = new Dog("Percy", "Doberman Pincher", false);
-	IPet perished = new NoPet();
-	
-	Human jack = new Human("Jack", collie, 31);
-	Human drew = new Human("Drew", doberman, 15);
+  Human jack = new Human("Jack", collie, 31);
+  Human drew = new Human("Drew", doberman, 15);
   Human luna = new Human("Luna", perished, 20);
   Human rachel = new Human("Rachel", perished, 27);
   Human jill = new Human("Jill", collie, 31);
